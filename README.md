@@ -1,6 +1,3 @@
-# AlgorithmicBias
-
-```R
 # importing libraries
 library(tidyverse)
 library(randomForest)
@@ -181,4 +178,3 @@ fnr_plot <- model_stats %>% ggplot(aes(x = Gender, y = FNR, fill = Gender)) +
   )
 
 grid.arrange(acc_plot, fpr_plot, fnr_plot, nrow = 1)
-```
