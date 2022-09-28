@@ -122,10 +122,11 @@ false_negative_rate <- function (FP, TN) {
 }
 
 ACC_male <- sum(predictions_actual_male$`Actual Rating` == predictions_actual_male$`Predicted Rating`)/nrow(predictions_actual_male)
+ACC_female <- sum(predictions_actual_female$`Actual Rating` == predictions_actual_female$`Predicted Rating`)/nrow(predictions_actual_female)
+
 FPR_male = false_positive_rate(FN_male, TP_male)
 FPR_female = false_positive_rate(FN_female, TP_female)
 
-ACC_female <- sum(predictions_actual_female$`Actual Rating` == predictions_actual_female$`Predicted Rating`)/nrow(predictions_actual_female)
 FNR_male = false_negative_rate(FP_male, TN_male)
 FNR_female = false_negative_rate(FP_female, TN_female)
 
